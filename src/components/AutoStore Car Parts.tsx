@@ -97,8 +97,8 @@ function AutoStoreuCarParts() {
             <CarouselContent>
               <CarouselItem>
                 <div className="grid grid-cols-6 gap-5">
-                  {CategoryTabData.map((val: any) => (
-                    <div className="group hover:shadow-md flex flex-col items-center justify-center rounded-md space-y-2 py-2 bg-white w-32 cursor-pointer">
+                  {CategoryTabData.map((val: {name:string},index) => (
+                    <div key={index} className="group hover:shadow-md flex flex-col items-center justify-center rounded-md space-y-2 py-2 bg-white w-32 cursor-pointer">
                       <Image
                         src={"/image/Air Fresher.png"}
                         alt="AIr Freshener Image"
@@ -114,8 +114,8 @@ function AutoStoreuCarParts() {
               </CarouselItem>
               <CarouselItem>
                 <div className="grid grid-cols-6 gap-2">
-                  {CategoryTabData.map((val: any) => (
-                    <div className="group hover:shadow-md flex flex-col items-center justify-center rounded-md space-y-4 py-2 bg-white w-32 cursor-pointer">
+                  {CategoryTabData.map((val: {name:string},index) => (
+                    <div key={index} className="group hover:shadow-md flex flex-col items-center justify-center rounded-md space-y-4 py-2 bg-white w-32 cursor-pointer">
                       <Image
                         src={"/image/Toyota.png"}
                         alt="AIr Freshener Image"
@@ -299,8 +299,8 @@ function AutoStoreuCarParts() {
             <CarouselContent>
               <CarouselItem>
                 <div className="grid grid-cols-6 gap-10">
-                  {BrandTabData.map((val: any) => (
-                    <div className="group hover:shadow-md flex flex-col items-center justify-center rounded-md space-y-4 py-2 bg-white w-32 cursor-pointer">
+                  {BrandTabData.map((val: {name:string},index) => (
+                    <div key={index} className="group hover:shadow-md flex flex-col items-center justify-center rounded-md space-y-4 py-2 bg-white w-32 cursor-pointer">
                       <svg
                         width="60"
                         height="41"
@@ -342,8 +342,8 @@ function AutoStoreuCarParts() {
               </CarouselItem>
               <CarouselItem>
                 <div className="grid grid-cols-4 gap-10">
-                  {BrandTabData.map((val: any) => (
-                    <div className="group hover:shadow-md flex flex-col items-center justify-center rounded-md space-y-4 py-2 bg-white w-32 cursor-pointer">
+                  {BrandTabData.map((val: {name:string},index) => (
+                    <div key={index} className="group hover:shadow-md flex flex-col items-center justify-center rounded-md space-y-4 py-2 bg-white w-32 cursor-pointer">
                       <svg
                         width="60"
                         height="41"

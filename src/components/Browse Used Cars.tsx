@@ -84,8 +84,8 @@ function BrowseUsedCars() {
   return (
     <section className="bg-[#F2F3F3] flex flex-col items-center h-[500px] py-10 space-y-10">
       <h1 className="text-2xl text-gray-700 font-semibold">Browse Used Cars</h1>
-      <Tabs defaultValue="Category" className="w-[1000px] " >
-        <TabsList >
+      <Tabs defaultValue="Category" className="w-[1000px] ">
+        <TabsList>
           <TabsTrigger value="Category">Category</TabsTrigger>
           <TabsTrigger value="City">City</TabsTrigger>
           <TabsTrigger value="Make">Make</TabsTrigger>
@@ -93,13 +93,16 @@ function BrowseUsedCars() {
           <TabsTrigger value="Budget">Budget</TabsTrigger>
           <TabsTrigger value="Body Type">Body Type</TabsTrigger>
         </TabsList>
-        <TabsContent value="Category" >
+        <TabsContent value="Category">
           <Carousel>
             <CarouselContent>
               <CarouselItem>
                 <div className="grid grid-cols-6 gap-10">
-                  {CategoryTabData.map((val: any) => (
-                    <div className="group hover:shadow-md flex flex-col items-center justify-center rounded-md space-y-4 py-2 bg-white w-32 cursor-pointer">
+                  {CategoryTabData.map((val: { name: string }, index) => (
+                    <div
+                      key={index}
+                      className="group hover:shadow-md flex flex-col items-center justify-center rounded-md space-y-4 py-2 bg-white w-32 cursor-pointer"
+                    >
                       <svg
                         width="60"
                         height="41"
@@ -141,8 +144,11 @@ function BrowseUsedCars() {
               </CarouselItem>
               <CarouselItem>
                 <div className="grid grid-cols-6 gap-10">
-                  {CategoryTabData.map((val: any) => (
-                    <div className="group hover:shadow-md flex flex-col items-center justify-center rounded-md space-y-4 py-2 bg-white w-32 cursor-pointer">
+                  {CategoryTabData.map((val: { name: string }, index) => (
+                    <div
+                      key={index}
+                      className="group hover:shadow-md flex flex-col items-center justify-center rounded-md space-y-4 py-2 bg-white w-32 cursor-pointer"
+                    >
                       <svg
                         width="60"
                         height="41"
@@ -386,8 +392,11 @@ function BrowseUsedCars() {
             <CarouselContent>
               <CarouselItem>
                 <div className="grid grid-cols-6 gap-10">
-                  {BodyTypeTabData.map((val: any) => (
-                    <div className="group hover:shadow-md flex flex-col items-center justify-center rounded-md space-y-4 py-2 bg-white w-32 cursor-pointer">
+                  {BodyTypeTabData.map((val: { name: string }, index) => (
+                    <div
+                      key={index}
+                      className="group hover:shadow-md flex flex-col items-center justify-center rounded-md space-y-4 py-2 bg-white w-32 cursor-pointer"
+                    >
                       <svg
                         width="60"
                         height="41"
@@ -429,8 +438,11 @@ function BrowseUsedCars() {
               </CarouselItem>
               <CarouselItem>
                 <div className="grid grid-cols-6 gap-10">
-                  {BodyTypeTabData.map((val: any) => (
-                    <div className="group hover:shadow-md flex flex-col items-center justify-center rounded-md space-y-4 py-2 bg-white w-32 cursor-pointer">
+                  {BodyTypeTabData.map((val: { name: string }, index) => (
+                    <div
+                      key={index}
+                      className="group hover:shadow-md flex flex-col items-center justify-center rounded-md space-y-4 py-2 bg-white w-32 cursor-pointer"
+                    >
                       <svg
                         width="60"
                         height="41"

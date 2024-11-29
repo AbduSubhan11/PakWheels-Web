@@ -121,8 +121,8 @@ function NewsandReviews() {
               </div>
             </div>
             <p>
-              I am facing bracking is not too good as it's not responsive on
-              light foot it doesn't respond properly, while disk pads are new
+              I am facing bracking is not too good as it&apos;s not responsive on
+              light foot it doesn&apos;t respond properly, while disk pads are new
               and disk rotators are polished no line in it once u judge a pot
               hole and try to brake moderately it
             </p>
@@ -131,7 +131,7 @@ function NewsandReviews() {
             <div>
               <h1 className="text-[#233D7B] text-xl font-semibold">Ask Xulfiqar - An Automotive Encyclopedia</h1>
               <p>
-                In my opinion "Xulfiqar" is the most knowledgeable person on
+                In my opinion &apos;Xulfiqar&apos; is the most knowledgeable person on
                 automotive, on PW (whom I have come across in my life). He has
                 qualification , knowledge and on-hands experience, a recipe
                 seldom found in real world. Above
